@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+.card {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px rgb(59, 59, 59 0.4);
+
+}
+.inputs{
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 40rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputs label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.inputs input{
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 0.25rem;
+}
+.inputs input:focus{
+    outline: none;
+    border-color: #4f005f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn{
+    border: 1px solid #4f005f;
+    background: #4f005f;
+    color: #fff;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:hover,
+.btn:active{
+    background: #741188;
+    border-color: #741188;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.users {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 40rem;
+}
+.users ul {
+    list-style-type: none;
+    padding: 1rem;
+}
+.users li {
+    border: 1px solid #ccc;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal{
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 80%;
+    overflow: hidden;
+    z-index: 100;
+}
+.header {
+    background: #4f005f;
+    padding: 1rem;
+}
+.header h2 {
+    margin: 0;
+    color: #fff;
+}
+.content{
+    padding: 1rem;
+}
+.actions{
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
 }
